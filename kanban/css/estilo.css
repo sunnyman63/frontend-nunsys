@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding-top: 50px;
+    text-align: center;
+}
+
+header h1 {
+    background-color: rgba(17, 117, 162, 0.5);
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.5em;
+    display: inline;
+}
+
+main {
+    padding: 30px 0px;
+    width: 1800px;
+    font-size: 0;
+    margin: auto;
+}
+
+section {
+    display: inline-block;
+    vertical-align: text-top;
+    margin: 0px 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 330px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+section h2 {
+    margin: 10px 0px;
+    font-size: 1.4em;
+}
+
+section article {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+section article:hover {
+    background-color: rgb(17, 117, 162, 0.8);
+    cursor: pointer; 
+}
+
+article .task_close_btn {
+    text-align: end;
+    color: #F00;
+}
+
+article .task_body h3{
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+article .task_body p{
+    margin: 20px 0px;
+}
+
+article .task_icons {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+section article:hover .task_icons {
+    color: rgb(17, 117, 162, 0.8);  
+}
+
+article .task_icons div {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 100%;
+}
+
+article .task_icons .icon_desktop{
+    background-color: #5bbc5f;
+}
+
+article .task_icons .icon_cube{
+    background-color: #ee7437;
+}
+
+article .task_icons .icon_mobile{
+    background-color: #f0cc5e;
+}
