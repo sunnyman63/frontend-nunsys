@@ -1,0 +1,77 @@
+section {
+    article {
+        @include colorFondo($blanco,1);
+        border-radius: $radio;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+
+        &:hover {
+            @include colorFondo($azul,0.8);
+            cursor: pointer; 
+
+            .task_icons {
+                color: rgba($azul, 0.8);  
+            }
+        }
+
+        .task_close_btn {
+            text-align: end;
+            color: #F00;
+        }
+
+        .task_body h3{
+            margin-top: 5px;
+            font-size: 1.1em;
+        }
+
+        .task_body p{
+            margin: 20px 0px;
+        }
+
+        .task_icons {
+            color: #fff;
+            margin-bottom: 10px;
+
+            div {
+                display: inline-block;
+                height: 32px;
+                width: 32px;
+                text-align: center;
+                padding-top: 8px;
+                border-radius: 100%;
+            }
+
+            .icon_desktop{
+                @include colorFondo(#5bbc5f,1);
+            }
+
+            .icon_cube{
+                @include colorFondo(#ee7437,1);
+            }
+
+            .icon_mobile{
+                @include colorFondo(#f0cc5e,1);
+            }
+        }
+    }
+
+    
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

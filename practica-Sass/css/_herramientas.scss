@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+$blanco: #fff;
+$azul: #1175a2;
+$radio: 15px;
+
+@mixin colorFondo($color, $opacidad) {
+    background-color: rgba($color, $opacidad);
+}

@@ -1,0 +1,15 @@
+header {
+
+    padding-top: 50px;
+    text-align: center;
+
+    h1 {
+        @include colorFondo($azul,0.5);
+        padding: 10px 20px;
+        border-radius: $radio;
+        color: #fff;
+        font-size: 1.5em;
+        display: inline;
+    }
+}
+

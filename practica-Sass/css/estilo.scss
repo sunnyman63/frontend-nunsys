@@ -1,0 +1,22 @@
+@import "herramientas";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    .container {
+        min-height: 100vh;
+        background-image: url("../img/fondo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@import "header";
+@import "main";
+@import "tarea";
