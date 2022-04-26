@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  background-color: #aaa;
+  padding-bottom: 50px;
+}
+
+.curriculum {
+  min-width: 576px;
+  max-width: 992px;
+  height: 1100px;
+  margin: auto;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px #000 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nombre {
+  background-color: #fff;
+  width: 70%;
+  height: 10%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.datos-personales {
+  background-color: #444;
+  height: 100%;
+  width: 30%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.datos-personales img {
+  width: 100%;
+}
+
+.datos-personales .dato {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.datos-personales .dato h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.datos-personales .dato hr {
+  margin-top: 10px;
+  border: 1px #000 solid;
+}
+
+.datos-personales .dato h3 {
+  color: #fff;
+}
+
+.datos-personales .dato div {
+  height: 20px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.datos-personales .dato div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 20px;
+  background-color: #05f;
+}
+
+.datos-personales .dato div.progress-es::after {
+  width: 100%;
+}
+
+.datos-personales .dato div.progress-en::after {
+  width: 60%;
+}
+
+.datos-personales .dato div.progress-vlc::after {
+  width: 80%;
+}
+
+.datos-profesionales {
+  background-color: #fff;
+  width: 70%;
+  height: 90%;
+  padding: 10px;
+}
+
+.datos-profesionales .dato {
+  margin-top: 20px;
+}
+
+.datos-profesionales .dato hr {
+  margin-bottom: 10px;
+}
+
+.datos-profesionales .dato .timeline {
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.datos-profesionales .dato .timeline .fechas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.datos-profesionales .dato .timeline .fechas div:first-child {
+  width: 25%;
+  position: relative;
+}
+
+.datos-profesionales .dato .timeline .fechas div:first-child::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  border: 5px #05f solid;
+  border-radius: 100%;
+}
+
+.datos-profesionales .dato .timeline .fechas:not(.fechas:last-child) div:first-child::after {
+  content: "";
+  position: absolute;
+  right: 17px;
+  bottom: -30px;
+  background-color: #05f;
+  height: 32px;
+  width: 6px;
+}
+
+.datos-profesionales .dato .timeline .fechas div:last-child {
+  width: 75%;
+}
+
+.datos-profesionales .dato .conocimientos {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.datos-profesionales .dato .conocimientos img {
+  width: 18%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .curriculum {
+    height: auto;
+  }
+  .curriculum .datos-personales {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: auto;
+    width: 100%;
+  }
+  .curriculum .datos-personales img {
+    width: 30%;
+  }
+  .curriculum .datos-personales .dato:first-of-type {
+    width: 70%;
+  }
+  .curriculum .nombre {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    height: auto;
+    width: 100%;
+  }
+  .curriculum .datos-profesionales {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: auto;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

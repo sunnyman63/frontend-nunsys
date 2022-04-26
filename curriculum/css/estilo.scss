@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+$blanco: #fff;
+$negro: #000;
+$azul: #05f;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background-color: #aaa;
+    padding-bottom: 50px;
+}
+
+.curriculum {
+    min-width: 576px;
+    max-width: 992px;
+    height: 1100px;
+    margin: auto;
+    background-color: $blanco;
+    padding: 10px;
+    border: 1px $negro solid;
+    @include flex(column, flex-start, flex-start);
+}
+
+@mixin flex($direction,$justify,$align) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@import "nombre";
+@import "datos-personales";
+@import "datos-profesinales";
+@import "medias";

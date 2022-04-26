@@ -1,0 +1,7 @@
+.nombre {
+    background-color: $blanco;
+    width: 70%;
+    height: 10%;
+    padding: 20px;
+    @include flex(row, center, center);
+}

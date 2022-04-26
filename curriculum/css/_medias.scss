@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+    .curriculum {
+        height: auto;
+        .datos-personales {
+            order: 1;
+            height: auto;
+            width: 100%;
+            img {
+                width: 30%;
+            }
+            .dato:first-of-type {
+                width: 70%;
+            }
+        }
+        .nombre {
+            order: 0;
+            height: auto;
+            width: 100%;
+        }
+        .datos-profesionales {
+            order: 2;
+            height: auto;
+            width: 100%;
+        }
+    }
+}

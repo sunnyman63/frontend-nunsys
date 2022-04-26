@@ -1,0 +1,56 @@
+.datos-personales {
+    background-color: #444;
+    height: 100%;
+    width: 30%;
+    padding: 10px;
+    @include flex(row, space-between, center);
+
+    img {
+        width: 100%;
+    }
+
+    .dato {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        hr {
+            margin-top: 10px;
+            border: 1px $negro solid;
+        }
+        h3 {
+            color: $blanco;
+        }
+        div {
+            height: 20px;
+            background-color: $blanco;
+            margin-bottom: 5px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                height: 20px;
+                background-color: $azul;
+            }
+            &.progress-es {
+                &::after {
+                    width: 100%;
+                }
+            }
+            &.progress-en {
+                &::after {
+                    width: 60%;
+                }
+            }
+            &.progress-vlc {
+                &::after {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
