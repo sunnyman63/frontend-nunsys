@@ -1,0 +1,44 @@
+@import "../comunes/header"; 
+@import "../comunes/main";
+main {
+    h1 {
+        font-size: 1.5em;
+        margin: 50px 0px 40px 0px;
+    }
+    .sections {
+        button {
+            background-color: #fff;
+            color: #777;
+            border: 2px #777 solid;
+            border-radius: 2px;
+            padding: 5px 10px;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+        .selected {
+            background-color: #777;
+            color: #fff;
+        }
+    }
+    .row {
+        margin: 0;
+        div {
+            margin-top: 50px;
+            img {
+                width: 100%;
+            }
+            h2 {
+                font-size: 1em;
+                margin-top: 20px;
+            }
+            p {
+                font-size: 0.7em;
+                margin-bottom: 20px;
+            }
+        }
+        
+    }
+}
+
+
+@import "../comunes/footer";

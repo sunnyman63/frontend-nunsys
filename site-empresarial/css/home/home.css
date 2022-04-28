@@ -1,0 +1,286 @@
+header {
+  background-color: #ccc;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+header .headerup {
+  padding: 15px 0px;
+}
+
+header .headerup .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .headerup .search .searcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+header .headerup .search .searcher button {
+  border: none;
+  background-color: #555;
+  width: 30px;
+  border-radius: 5%;
+}
+
+header .headerdown {
+  background-color: #fff;
+  border-top: 2px #bbb solid;
+  border-bottom: 2px #bbb solid;
+}
+
+header .headerdown .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .headerdown .navbar-brand img {
+  width: 60px;
+}
+
+header .headerdown .navbar-brand .brand {
+  margin-left: 10px;
+}
+
+header .headerdown .navbar-brand .brand > * {
+  margin: 0;
+}
+
+header .headerdown .navbar-brand .brand h1 {
+  font-size: 1.5em;
+}
+
+header .headerdown .navbar-brand .brand p {
+  font-size: 0.7em;
+}
+
+header .headerdown .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: bold;
+}
+
+header .headerdown .navbar-collapse .nav-link {
+  color: #000 !important;
+  text-align: end;
+}
+
+header .headerdown .navbar-collapse .active {
+  color: #ff4800 !important;
+}
+
+@media (max-width: 576px) {
+  .headerup .col-12 {
+    text-align: center;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-bottom: 40px;
+}
+
+main .selection {
+  padding: 20px;
+  background-color: #eee;
+}
+
+main .selection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: inherit;
+}
+
+main .selection .container div {
+  color: #fff;
+  border: none;
+  background-color: #ff4800;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+main .selection .container div a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main .container {
+  background-color: #fff;
+}
+
+main {
+  padding-top: 40px;
+}
+
+main .carousel-indicators {
+  margin-bottom: 0;
+  bottom: -30px;
+}
+
+main .carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border: none;
+  border-radius: 50%;
+}
+
+main .carousel-inner {
+  border: 1px #ccc solid;
+}
+
+main .part {
+  margin-top: 60px;
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .part h1 {
+  font-size: 1.5em;
+}
+
+main .part p {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+main .part button {
+  color: #fff;
+  border: none;
+  background-color: #ff4800;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  background-color: #ccc;
+  font-size: 0.7em;
+  color: #777;
+}
+
+footer .footerup {
+  padding: 40px 0px;
+}
+
+footer .footerup .row > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footerup .row > div h1 {
+  font-size: 1.5em;
+  color: #000;
+}
+
+footer .footerup .row > div h2 {
+  font-size: 1em;
+  color: #000;
+  margin-bottom: 0;
+}
+
+footer .footerup .row > div a {
+  width: 100%;
+  text-decoration: none;
+  color: #777;
+}
+
+footer .footerup .row > div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 300px;
+}
+
+footer .footerup .row > div form input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+footer .footerup .row > div form button {
+  color: #fff;
+  border: none;
+  height: 1.4rem;
+  background-color: #ff4800;
+  border-radius: 5%;
+  padding: 0px 10px;
+}
+
+footer .footerdown {
+  background-color: #ddd;
+  padding: 10px 0px;
+}
+
+footer .footerdown p {
+  margin: 0;
+}
+
+footer .footerdown .socialmedias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+}
+
+footer .footerdown .socialmedias a {
+  margin-left: 10px;
+  color: #777;
+}
+/*# sourceMappingURL=home.css.map */

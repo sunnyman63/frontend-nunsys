@@ -1,0 +1,45 @@
+@import "../comunes/header"; 
+@import "../comunes/main";
+main {
+    padding-top: 40px;
+    .carousel-indicators {
+        margin-bottom: 0;
+        bottom: -30px;
+        [data-bs-target] {
+            height: 10px;
+            width: 10px;
+            border: none;
+            border-radius: 50%;
+        }
+    }
+
+    .carousel-inner {
+        border: 1px #ccc solid;
+    }
+
+    .part {
+        margin-top: 60px;
+        padding: 0px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        h1 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 0.8em;
+            margin: 0;
+        }
+        button {
+            color: #fff;
+            border: none;
+            background-color: #ff4800;
+            border-radius: 2px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+
+@import "../comunes/footer";

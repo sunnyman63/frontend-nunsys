@@ -1,0 +1,62 @@
+footer {
+    flex: 0 1 auto;
+    background-color: #ccc;
+    font-size: 0.7em;
+    color: #777;
+    .footerup {
+        padding: 40px 0px;
+        .row {
+            &>div {
+                display: flex;
+                flex-direction: column;
+                h1 {
+                    font-size: 1.5em;
+                    color: #000;
+                }
+                h2 {
+                    font-size: 1em;
+                    color: #000;
+                    margin-bottom: 0;
+                }
+                a {
+                    width: 100%;
+                    text-decoration: none;
+                    color: #777;
+                }
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    max-width: 300px;
+                    input {
+                        flex: 1 1 auto;
+                    }
+                    button {
+                        color: #fff;
+                        border: none;
+                        height: 1.4rem;
+                        background-color: #ff4800;
+                        border-radius: 5%;
+                        padding: 0px 10px;
+                    }
+                }
+            }
+        }
+    }
+    .footerdown {
+        background-color: #ddd;
+        padding: 10px 0px;
+        p {
+            margin: 0;
+        }
+        .socialmedias {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 1.5em;
+            a {
+                margin-left: 10px;
+                color: #777;
+            }
+        }
+    }
+}

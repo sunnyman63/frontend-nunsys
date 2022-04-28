@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 1 auto;
+    margin-bottom: 40px;
+    .selection {
+        padding: 20px;
+        background-color: #eee;
+        .container {
+            display: flex;
+            background-color: inherit;
+            div {
+                color: #fff;
+                border: none;
+                background-color: #ff4800;
+                border-radius: 2px;
+                padding: 5px 10px;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .container {
+        background-color: #fff;
+    }
+}

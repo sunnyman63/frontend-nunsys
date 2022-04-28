@@ -1,0 +1,80 @@
+@import "../comunes/header"; 
+@import "../comunes/main";
+main {
+    .row {
+        background-color: #fff;
+        margin: 0;
+        padding-bottom: 50px;
+    }
+    .offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 50px;
+        &>* {
+            margin: 0;
+            max-width: 300px;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: 300;
+            background-color: #eee;
+            width: 100%;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            span {
+                font-weight: bold;
+            }
+            border-left: 2px #ddd solid;
+            border-right: 2px #ddd solid;
+            border-top: 2px #ddd solid;
+        }
+        h2 {
+            font-size: 1em;
+            color: #fff;
+            background-color: #000;
+            width: 100%;
+            padding: 20px 0px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            li {
+                padding: 10px 0px;
+                border-left: 2px #ddd solid;
+                border-right: 2px #ddd solid;
+                border-top: 1px #ddd solid;
+                border-bottom: 1px #ddd solid;
+            }
+        }
+        div {
+            width: 100%;
+            background-color: #eee;
+            padding: 20px 0px;
+            border-left: 2px #ddd solid;
+            border-right: 2px #ddd solid;
+            border-top: 1px #ddd solid;
+            border-bottom: 2px #ddd solid;
+            button {
+                color: #fff;
+                border: none;
+                background-color: #ff4800;
+                border-radius: 2px;
+                padding: 5px 10px;
+            }
+        }
+    }
+    .special {
+        h1 {
+            color: #fff;
+            background-color: #ff4800;
+            border: none;
+        }
+    }
+}
+
+
+@import "../comunes/footer";
